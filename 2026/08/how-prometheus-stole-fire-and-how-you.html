@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0b0f">
+<title>How Prometheus Stole Fire And How You Can "Steal" Traffic For Your Blog in 2027 | SSEGU</title>
+<meta name="description" content="Your blog is the same. You do not need to invent traffic. It already exists. On Google, YouTube, Reddit, and other blogs.">
+<meta property="og:title" content='How Prometheus Stole Fire And How You Can "Steal" Traffic For Your Blog in 2027'>
+<meta property="og:description" content="Your blog is the same. You do not need to invent traffic. It already exists. On Google, YouTube, Reddit, and other blogs.">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCJQXrunPWzopMvbxiqimxizc6BoIqRxxCX0SKzdsfIGrrS-Vi-bnsNFSwRh0gOJf4Zfs7EjvtIvhSWfj_rD_MnweCVn81hw455K8v-MubJRYe1xJj8B9LvkmT6gX4eOU6vJ8hgjzyB5CYcYDVGsfamNzGGyehusZVkcgHBRAecBwb0ANK5Pl-hxivnfH6/s1600/flat-clapperboard-icon_1063-38.jpg">
+<link rel="icon" href="https://www.ssegu.com/favicon.ico">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7777536386845474" crossorigin="anonymous"></script>
+
+<style>
+:root{--bg:#0b0b0f;--panel:#14141b;--panel2:#1b1b24;--text:#e8e8ed;--muted:#a5a5b2;--pink:#e30347;--pink2:#ff315f;--line:#292933;--radius:16px;--max:1200px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.site-header{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.header-inner{max-width:var(--max);margin:auto;padding:10px 22px;min-height:76px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;flex:0 0 auto}.brand img{width:126px;height:54px;object-fit:contain}.nav{display:flex;align-items:center;gap:7px;margin-left:auto}.nav a{padding:9px 12px;border-radius:9px;color:#d5d5dd;font-size:14px;font-weight:650}.nav a:hover,.nav a.active{background:rgba(227,3,71,.14);color:#fff}.nav .live{background:var(--pink);color:#fff}.menu-toggle{display:none;margin-left:auto;border:1px solid var(--line);background:var(--panel);color:#fff;border-radius:10px;padding:9px 13px;font-weight:700;font:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}.breadcrumbs{padding:22px 0 0;color:var(--muted);font-size:13px}.breadcrumbs a{color:#ff7898}.article-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:26px;align-items:start;padding:18px 0 60px}.article{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden}.article-head{padding:clamp(23px,4vw,42px) clamp(20px,4vw,42px) 20px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#ff7898;text-transform:uppercase;letter-spacing:.13em;font-size:11px;font-weight:800}.eyebrow:before{content:"";width:22px;height:2px;background:var(--pink)}h1{font-size:clamp(32px,5vw,52px);line-height:1.1;letter-spacing:-.045em;margin:15px 0 14px;color:#fff}.dek{font-size:17px;color:#b9b9c4;margin:0;max-width:800px}.article-meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:12px;margin-top:19px}.article-meta span+span:before{content:"•";color:var(--pink);margin-right:12px}.cover{width:100%;max-height:470px;object-fit:cover;background:#1b1b24}.article-body{padding:clamp(22px,4vw,42px);color:#d7d7df}.article-body p{margin:0 0 17px}.article-body h2{font-size:clamp(22px,3vw,29px);line-height:1.25;letter-spacing:-.025em;color:#fff;margin:36px 0 15px;padding-top:5px}.article-body h3{font-size:19px;color:#fff;margin:25px 0 10px}.article-body strong{color:#fff}.article-body a{color:#ff7898;text-decoration:underline}.article-body ol,.article-body ul{padding-left:23px;margin:8px 0 20px}.article-body li{padding-left:4px;margin:9px 0}.article-body table{width:100%;border-collapse:collapse;margin:18px 0 24px;font-size:14px;min-width:560px}.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0 24px}.article-body th,.article-body td{padding:13px 14px;text-align:left;border-bottom:1px solid #30303a}.article-body th{background:#24202a;color:#fff}.article-body tr:last-child td{border-bottom:0}.callout{padding:18px 20px;margin:23px 0;border:1px solid #542236;border-left:4px solid var(--pink);border-radius:12px;background:linear-gradient(110deg,#29131e,#17141b)}.callout p:last-child{margin-bottom:0}.toc{position:sticky;top:100px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}.toc h2{font-size:16px;margin:0 0 12px;color:#fff}.toc a{display:block;color:#bdbdc8;font-size:13px;padding:7px 0;border-bottom:1px solid #292933}.toc a:hover{color:#ff7898}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 8px}.tags span{font-size:12px;color:#ff9ab0;background:#321522;border:1px solid #572438;border-radius:30px;padding:5px 10px}.article-end{border-top:1px solid var(--line);margin-top:32px;padding-top:23px;color:var(--muted);font-size:13px}.footer{border-top:1px solid var(--line);background:#101015;padding:28px 0;color:#9999a7}.footer-inner{max-width:var(--max);margin:auto;padding:0 22px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer strong{color:#eee}.footer a{color:#ff7898}
+
+.ad-wrap{width:100%;max-width:970px;margin:18px auto 10px;padding:0 22px;text-align:center}
+.ad-label{display:block;color:#777783;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 5px}
+.ad-slot{width:100%;min-height:90px;display:flex;align-items:center;justify-content:center;overflow:hidden}.ad-slot .adsbygoogle{display:block;width:100%;min-width:250px;min-height:90px}.inpost-ad .adsbygoogle{display:block;width:100%;min-height:90px;max-width:100%;margin:0 auto}.inpost-ad{width:100%;max-width:100%;overflow:hidden}
+.inpost-ad{margin:28px 0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+.recent-section{margin:0 0 60px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
+.recent-heading{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:18px}
+.recent-heading h2{margin:0;color:#fff;font-size:clamp(22px,3vw,30px);line-height:1.2}
+.recent-heading a{color:#ff7898;font-size:13px;font-weight:700}
+.recent-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.recent-card{min-width:0;background:var(--panel2);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .18s,border-color .18s}
+.recent-card:hover{transform:translateY(-3px);border-color:#7d2946}
+.recent-card img{width:100%;height:125px;object-fit:cover;background:#252530}
+.recent-card .recent-copy{padding:12px}
+.recent-card h3{font-size:14px;line-height:1.35;color:#fff;margin:0 0 7px}
+.recent-card p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}
+.recent-status{color:var(--muted);font-size:13px;padding:12px 0}
+.toc{min-height:180px}
+@media(max-width:900px){.recent-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.ad-wrap{padding:0 12px;margin:12px auto}.recent-section{padding:18px 15px;margin-bottom:35px}.recent-grid{grid-template-columns:1fr 1fr;gap:10px}.recent-card img{height:100px}.recent-card .recent-copy{padding:10px}.recent-card h3{font-size:13px}}
+@media(max-width:420px){.recent-grid{grid-template-columns:1fr}}
+
+@media(max-width:900px){.article-layout{grid-template-columns:1fr}.toc{position:static;order:-1}.toc nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}}
+@media(max-width:680px){.header-inner{padding:8px 15px;min-height:65px;gap:10px}.brand img{width:108px;height:48px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:100%;left:0;right:0;margin:0;padding:10px 15px 16px;background:#101015;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:4px}.nav.open{display:flex}.nav a{padding:12px 14px}.wrap{padding:0 15px}.breadcrumbs{padding-top:17px}.article-layout{padding-top:12px;gap:14px}.article{border-radius:14px}.article-head{padding:24px 20px 16px}h1{font-size:34px}.dek{font-size:15px}.cover{max-height:270px}.article-body{padding:22px 20px}.article-body h2{margin-top:30px}.toc nav{grid-template-columns:1fr}.footer-inner{padding:0 15px;flex-direction:column}}
+</style>
+<link rel="canonical" href="https://www.ssegu.com/2026/08/how-prometheus-stole-fire-and-how-you.html"></head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="SSEGU home"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhRtMj7MpWphRNZ0jjesnGEDToqFuqv6hHYbudDOtn-bNeQ9cs18xgYjmHW7KEOejEPy3YXnEIkhcP8RKrFvFfDHl5iocbW1gZA_lBVlT5V8eOeLPlSESSsaaC8ZMtC-WGKvw3RnShaiEdWZuRBvb3qkTlYCJglNPaUeivVyzHo9GYuI0THG4idK9kqOOU=s143" alt="SSEGU"></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ Menu</button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="/">Home</a><a href="https://www.ssegu.com/p/about-us.html">About</a><a href="https://www.ssegu.com/p/contact-us.html">Contact us</a><a href="https://vj.ssegu.com/">Firimu</a><a href="https://games.ssegu.com/">Games</a><a href="https://work.ssegu.com/">Jobs</a><a class="live" href="https://www.ssegu.com/tv/">📺 Live TV</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ad-wrap" aria-label="Advertisement">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7777536386845474" data-ad-slot="9970802556" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+</div>
+<main class="wrap">
+  <div> <a href="/">Home</a><span> / blogs / How Prometheus Stole Fire And How You Can "Steal" Traffic For Your Blog in 2027</span></div><div class="article-layout">
+    <article class="article">
+      <header class="article-head">
+        <div class="eyebrow">blogs • SSEGU</div>
+        <h1>How Prometheus Stole Fire And How You Can "Steal" Traffic For Your Blog in 2027</h1>
+        <p class="dek">Your blog is the same. You do not need to invent traffic. It already exists. On Google, YouTube, Reddit, and other blogs.</p>
+        <div><span>SSEGU</span><span>Post</span><span>2026-08-26</span></div></header>
+      <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsMw2JVxnB1z6cb5MPjjCoO8aS0iDWe0qcCfHL0qbx9zgA8j0DuRVHRZtKSuYLUfEo10mocmu9k0Q4d2J5TzRY_L6ik8fqCsESeXMsw8w9ySDgVPnpIJeQHAwRJHMjYLBFBIBe6iYhi-iJ93S2fAeUSd9_Im7VKse-8QEayyrKMO7fdGyZpfODaUvy5NZ_/s1600/flat-clapperboard-icon_1063-38.jpg" alt='How Prometheus Stole Fire And How You Can "Steal" Traffic For Your Blog in 2027' loading="eager">
+      <div class="article-body"><p> </p><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsMw2JVxnB1z6cb5MPjjCoO8aS0iDWe0qcCfHL0qbx9zgA8j0DuRVHRZtKSuYLUfEo10mocmu9k0Q4d2J5TzRY_L6ik8fqCsESeXMsw8w9ySDgVPnpIJeQHAwRJHMjYLBFBIBe6iYhi-iJ93S2fAeUSd9_Im7VKse-8QEayyrKMO7fdGyZpfODaUvy5NZ_/s1536/flat-clapperboard-icon_1063-38.jpg" style="margin-left: 1em; margin-right: 1em;"></a></div>
+<p>Prometheus did not invent fire. The gods already had it.</p>
+<p>He stole it. And gave it to humans. That is why we have civilization.</p>
+<p>Your blog is the same. You do not need to invent traffic. It already exists. On Google, YouTube, Reddit, and other blogs.</p>
+<p>Most bloggers try to "build traffic from scratch". That takes 2 years.</p>
+<p>Prometheus bloggers steal traffic. Ethically. Strategically. And fast.</p>
+<p>This is how to steal fire for your blog and get 10x more readers in 2027 without waiting for SEO to kick in.</p>
+<h2>What "Stealing Traffic" Actually Means</h2>
+<p>It does not mean plagiarism or spam.</p>
+<p>Stealing traffic means: <strong>Go where attention already is, and bring people back to your blog.</strong></p>
+<p>Prometheus saw fire on Mount Olympus. He took it and used it.</p>
+<p>You will see attention on other platforms. You will take it and use it.</p>
+<p><strong>The Prometheus Rule</strong>: Do not wait for traffic. Borrow it.</p>
+<h2>The 5 Ways Prometheus Stole Fire For Your Blog</h2>
+<h2>1. Steal From The Gods - Rank For Keywords They Already Pay For</h2>
+<p>The gods guarded fire. Prometheus took it anyway.</p>
+<p>Big brands pay $10 to $50 per click for keywords on Google Ads.</p>
+<p><strong>The Prometheus Rule</strong>: Write blog posts for keywords people are already paying to advertise on.</p>
+<p><strong>How to do it in 2027</strong></p>
+<p>1. <strong>Go to Google</strong>: Search your topic. Look at the top 4 ads</p>
+<p>2. <strong>Those keywords are gold</strong>: If companies pay for them, people are buying</p>
+<p>3. <strong>Write a better blog post</strong>: 2000 words, examples, tools, FAQ</p>
+<p>4. <strong>Target "vs" and "alternative" keywords</strong>: "Notion vs Obsidian", "Best CRM for coaches"</p>
+<p>Why it works: Paid traffic proves demand. You just get it for free with SEO.</p>
+<h2>2. Steal From Other Titans - Guest Post On Blogs With Audiences</h2>
+<p>Prometheus did not start his own fire. He took it from Olympus.</p>
+<p>Other blogs already have your readers.</p>
+<p><strong>The Prometheus Rule</strong>: Borrow other people’s audiences instead of building your own.</p>
+<p><strong>Your Guest Post Theft Plan</strong></p>
+<ol>
+<li><strong>Find 10 blogs</strong>: In your niche with 50k to 500k monthly visitors</li>
+<li><strong>Pitch 1 idea</strong>: "3 Mistakes That Are Killing Your". Be specific</li>
+<li><strong>Overdeliver</strong>: 2000 words, images, examples</li>
+<li><strong>Steal the traffic</strong>: Link back to 2 to 3 of your best blog posts in the article</li>
+</ol>
+<p>1 good guest post can bring 500 to 2000 visitors and 50 to 100 email subscribers.</p>
+<h2>3. Steal From The Village - Answer Questions Where People Are Asking</h2>
+<p>Prometheus gave fire to humans in the village, not to the gods.</p>
+<p>Your readers are asking questions on Reddit, Quora, and YouTube right now.</p>
+<p><strong>The Prometheus Rule</strong>: Answer questions with a link back to your full blog post.</p>
+<p><strong>How to do it</strong></p>
+<p>1. <strong>Search</strong>: "site:reddit.com your topic problem"</p>
+<p>2. <strong>Write a helpful answer</strong>: 3 to 4 paragraphs. No fluff</p>
+<p>3. <strong>Add your blog link</strong>: "I wrote a full guide with screenshots here:"</p>
+<p>4. <strong>Do this 3x per week</strong></p>
+<p>This is how you get traffic in 30 days, not 12 months. Reddit and Quora posts rank in Google in 48 hours.</p>
+<h2>4. Steal From The Sun - Turn Other Content Into Blog Traffic</h2>
+<p>Prometheus used the sun to light the fire. Use the sun of 2027: short-form video.</p>
+<p><strong>The Prometheus Rule</strong>: Make content on TikTok and YouTube that points to your blog.</p>
+<p><strong>The Traffic Loop</strong></p>
+<table>
+<tbody><tr><td><strong>Step</strong></td><td><strong>Prometheus Move</strong></td><td><strong>Blog Version</strong></td></tr>
+<tr><td><strong>Step 1</strong></td><td><strong>Take fire</strong></td><td><strong>Make 30 sec video: "3 tips from my blog"</strong></td></tr>
+<tr><td><strong>Step 2</strong></td><td><strong>Bring to humans</strong></td><td><strong>Post on TikTok, Reels, Shorts</strong></td></tr>
+<tr><td><strong>Step 3</strong></td><td><strong>Teach them</strong></td><td><strong>"Full guide in bio"</strong></td></tr>
+</tbody></table>
+<p>1 blog post = 5 short videos. 5 videos = 1000 clicks to your blog.</p>
+<h2>5. Steal Back Your Own Fire - Repurpose Old Posts</h2>
+<p>The gods tried to take fire back. Prometheus kept giving it.</p>
+<p>Most bloggers write a post and forget it. That is dumb.</p>
+<p><strong>The Prometheus Rule</strong>: 1 blog post should become 10 pieces of traffic.</p>
+<p><strong>How to repurpose</strong></p>
+<p>1. <strong>Blog post</strong> → Twitter thread</p>
+<p>2. <strong>Blog post</strong> → LinkedIn carousel</p>
+<p>3. <strong>Blog post</strong> → YouTube video</p>
+<p>4. <strong>Blog post</strong> → Email newsletter</p>
+<p>5. <strong>Blog post</strong> → Pinterest pins</p>
+<p>Now 1 piece of work steals traffic from 5 platforms.</p>
+<h2>The Prometheus Blog Template: Built To Steal Traffic</h2>
+<p>If you want to steal traffic, your blog post needs to be built for it.</p>
+<p><strong>1. Hook</strong>: "Everyone is doing this wrong"</p>
+<p><strong>2. Proof</strong>: Screenshot, data, or story</p>
+<p><strong>3. Steps</strong>: Numbered list. Easy to share</p>
+<p><strong>4. CTA</strong>: "I made a free template for this. Get it here."</p>
+<p><strong>5. Internal Links</strong>: Link to 3 other posts to keep them on your site</p>
+<p>Write for humans first, Google second.</p>
+<h2>Your 30-Day Prometheus Traffic Plan</h2>
+<p><strong>Week 1: Find The Fire</strong></p>
+<p>Find 10 keywords with ads. Find 20 questions on Reddit. Pick 4 to write.</p>
+<p><strong>Week 2: Steal It</strong></p>
+<p>Write 2 blog posts. Turn each into 5 short videos. Post daily.</p>
+<p><strong>Week 3: Borrow Audiences</strong></p>
+<p>Pitch 3 guest posts. Answer 10 Reddit/Quora questions with your link.</p>
+<p><strong>Week 4: Keep It Burning</strong></p>
+<p>Repurpose old posts. Update them with new data. Email your list.</p>
+<p>Goal: 1000 to 5000 new visitors in 30 days.</p>
+<h2>Tools Prometheus Would Use in 2027</h2>
+<p>1. <strong>Find Fire</strong>: Google Ads Keyword Planner, Ahrefs, Semrush</p>
+<p>2. <strong>Steal Audiences</strong>: Hunter.io to find blog emails, X to find threads</p>
+<p>3. <strong>Make Fire Travel</strong>: Canva for carousels, CapCut for short videos</p>
+<p>4. <strong>Keep Fire</strong>: ConvertKit or Beehiiv to capture emails from blog</p>
+<h2>Common Mistakes That Get You Burned</h2>
+<p>1. <strong>Copying content</strong>: Steal traffic, not words. Google will punish you</p>
+<p>2. <strong>Only relying on Google</strong>: 1 algorithm update and you are dead</p>
+<p>3. <strong>No email capture</strong>: If you steal traffic and do not collect emails, you lose it</p>
+<p>4. <strong>Being too nice</strong>: Ask for the click. "Read the full guide here"</p>
+<h2>FAQ: Stealing Traffic For Your Blog</h2>
+<p><strong>1. Is this ethical?</strong></p>
+<p>Yes. You are adding value and citing sources. Prometheus was called a criminal too.</p>
+<p><strong>2. How fast does this work?</strong></p>
+<p>Reddit and guest posts: 7 days. SEO: 60 to 90 days. Shorts: 14 days.</p>
+<p><strong>3. What if I have 0 audience?</strong></p>
+<p>Perfect. This method does not require an audience. You borrow one.</p>
+<p>Prometheus did not wait for permission. He saw where the fire was and he took it.</p>
+<p>Stop waiting for Google to rank you. Stop waiting for followers.</p>
+<p>Go to where attention already is. Answer questions. Guest post. Make shorts. Rank for paid keywords.</p>
+<p>Bring that fire back to your blog.</p>
+<p>Do that for 90 days and your blog will have traffic, email subscribers, and money.</p>
+<p><strong>Next step</strong>: What is your blog about? Tell me and I will give you 5 "fire sources" to steal traffic from this week.</p>[traffic][blog][audience][seo][content][promotion]<div class="tags" aria-label="Article tags"><span>blogs</span></div><div class="article-end">Content originally published on SSEGU. Information may change; check local requirements and source details before acting.</div></div>
+    </article>
+    <aside class="toc" aria-label="Recent posts">
+      <div class="recent-heading"><h2>Recent Posts</h2></div>
+      <div id="recentSidebar" class="recent-status">Loading the latest posts…</div>
+    </aside>
+  </div>
+  <section class="recent-section" aria-labelledby="morePostsTitle">
+    <div class="recent-heading">
+      <h2 id="morePostsTitle">More You May Like</h2>
+      <a href="/sitemap.xml" target="_blank" rel="noopener">View sitemap →</a>
+    </div>
+    <div id="recentPostsGrid" class="recent-grid">
+      <div class="recent-status">Loading recent posts from SSEGU…</div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="footer-inner"><div><strong>SSEGU</strong> — Work, Learn &amp; Grow</div><div>© <span id="year"></span> SSEGU. All rights reserved.</div><div><a href="https://www.ssegu.com/p/about-us.html">About</a> · <a href="https://www.ssegu.com/p/privacy-policy.html">Privacy Policy</a> · <a href="https://www.ssegu.com/p/terms-and-conditions.html">Terms</a> · <a href="https://www.ssegu.com/p/advertiser-disclosure.html">Disclosure</a> · <a href="https://www.ssegu.com/p/contact-us.html">Contact us</a></div></div></footer>
+<script>(function(){
+  const menu=document.getElementById('mainNav'),toggle=document.getElementById('menuToggle');
+  const year=document.getElementById('year');
+  if(year) year.textContent=new Date().getFullYear();
+  if(menu&&toggle){
+    toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
+    menu.addEventListener('click',e=>{if(e.target.closest('a')){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');}});
+  }
+  function requestAd(ins){
+    if(!ins||ins.dataset.adRequested==='1')return;
+    ins.dataset.adRequested='1';
+    try{(window.adsbygoogle=window.adsbygoogle||[]).push({});}
+    catch(err){console.warn('AdSense could not load this ad slot:',err);}
+  }
+  document.querySelectorAll('.adsbygoogle').forEach(requestAd);
+  const body=document.querySelector('.article-body');
+  if(body){
+    const blocks=Array.from(body.children).filter(el=>/^(P|H2|H3|OL|UL|TABLE|DIV|BLOCKQUOTE)$/.test(el.tagName)&&!el.classList.contains('tags')&&!el.classList.contains('article-end'));
+    const positions=[Math.floor(blocks.length*.34),Math.floor(blocks.length*.68)];
+    [...new Set(positions)].sort((a,b)=>b-a).forEach(index=>{
+      const anchor=blocks[Math.min(index,blocks.length-1)];
+      if(!anchor)return;
+      const wrap=document.createElement('div');wrap.className='inpost-ad';wrap.setAttribute('aria-label','Advertisement');
+      wrap.innerHTML='<span class="ad-label">Advertisement</span><ins class="adsbygoogle" style="display:block;width:100%;min-height:90px" data-ad-client="ca-pub-7777536386845474" data-ad-slot="9970802556" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+      anchor.insertAdjacentElement('afterend',wrap);requestAd(wrap.querySelector('.adsbygoogle'));
+    });
+  }
+
+  const api='https://api.github.com/repos/amssegu/work/contents/posts?ref=main';
+  const rawBase='https://raw.githubusercontent.com/amssegu/work/main/';
+  const postBase='https://www.ssegu.com/posts/';
+  const githubFolder='https://github.com/amssegu/ssegu/tree/main/posts';
+  const grid=document.getElementById('recentPostsGrid');
+  const sidebar=document.getElementById('recentSidebar');
+  function cleanText(value){const el=document.createElement('div');el.innerHTML=value||'';return (el.textContent||'').replace(/\s+/g,' ').trim();}
+  function dateFromName(name){
+    const m=name.match(/(20\d{2})[-_]?([01]\d)[-_]?([0-3]\d)/);
+    if(!m)return 0;
+    const d=new Date(Number(m[1]),Number(m[2])-1,Number(m[3]));
+    return Number.isNaN(d.getTime())?0:d.getTime();
+  }
+  function fallbackTitle(name){return name.replace(/\.html?$/i,'').replace(/^\d{4}[-_]\d{2}[-_]\d{2}[-_]?/,'').replace(/[-_]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase());}
+  function makeCard(post){
+    const a=document.createElement('a');a.className='recent-card';a.href=post.url;
+    const img=document.createElement('img');img.loading='lazy';img.alt=post.title;img.src=post.image||'https://www.ssegu.com/favicon.ico';
+    const copy=document.createElement('div');copy.className='recent-copy';
+    const h=document.createElement('h3');h.textContent=post.title;
+    const p=document.createElement('p');p.textContent=post.description||'Read the latest article on SSEGU.';
+    copy.append(h,p);a.append(img,copy);return a;
+  }
+  function showError(){
+    const message='Posts could not be loaded right now.';
+    if(grid){
+      grid.replaceChildren();const p=document.createElement('p');p.className='recent-status';p.textContent=message+' ';
+      const link=document.createElement('a');link.href=githubFolder;link.textContent='Browse all posts on GitHub';p.append(link);grid.append(p);
+    }
+    if(sidebar){sidebar.replaceChildren();const p=document.createElement('p');p.className='recent-status';p.textContent=message;sidebar.append(p);}
+  }
+  async function loadRecentPosts(){
+    if(!grid&&!sidebar)return;
+    try{
+      const response=await fetch(api,{headers:{'Accept':'application/vnd.github+json'}});
+      if(!response.ok)throw new Error('GitHub API returned '+response.status);
+      const files=await response.json();
+      const htmlFiles=files.filter(f=>f.type==='file'&&/\.html?$/i.test(f.name)&&!f.name.toLowerCase().startsWith('index'));
+      htmlFiles.sort((a,b)=>dateFromName(b.name)-dateFromName(a.name)||b.name.localeCompare(a.name));
+      const selected=htmlFiles.slice(0,20);
+      if(!selected.length)throw new Error('No HTML articles found in /posts.');
+      const posts=await Promise.all(selected.map(async file=>{
+        const post={title:fallbackTitle(file.name),description:'Read the latest article on SSEGU.',image:'',url:postBase+file.name.replace(/\.html?$/i,'')+'.html'};
+        try{
+          const r=await fetch(file.download_url||rawBase+file.path);
+          if(!r.ok)throw new Error('Could not read article HTML');
+          const source=await r.text();const doc=new DOMParser().parseFromString(source,'text/html');
+          post.title=doc.querySelector('meta[property="og:title"]')?.content||doc.querySelector('h1')?.textContent?.trim()||doc.title||post.title;
+          post.description=doc.querySelector('meta[name="description"]')?.content||doc.querySelector('meta[property="og:description"]')?.content||doc.querySelector('article p, .post-body p, p')?.textContent?.trim()||post.description;
+          post.image=doc.querySelector('meta[property="og:image"]')?.content||doc.querySelector('article img, .post-body img, img')?.src||'';
+        }catch(metadataError){console.info('Using filename details for '+file.name,metadataError);}
+        post.description=cleanText(post.description).slice(0,150);return post;
+      }));
+      if(grid)grid.replaceChildren(...posts.map(makeCard));
+      if(sidebar){sidebar.replaceChildren();posts.slice(0,10).forEach(post=>{const link=document.createElement('a');link.href=post.url;link.textContent=post.title;sidebar.append(link);});}
+    }catch(error){console.warn('SSEGU recent posts:',error);showError();}
+  }
+  loadRecentPosts();
+})();</script>
+</body>
+</html>
