@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baba TV — SSEGU Live TV</title>
+<meta name="description" content="Watch Baba TV live on SSEGU Live TV.">
+<meta name="theme-color" content="#0b0b0f">
+<link rel="icon" href="https://www.ssegu.com/favicon.ico">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7777536386845474" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:#0b0b0f;color:#e8e8ed;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:#e11d48;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+:focus-visible{outline:3px solid #e11d48;outline-offset:2px}
+.top-ad-wrap{position:sticky;top:0;z-index:9999;background:#0b0b0f;border-bottom:1px solid rgba(255,255,255,.08);padding:6px 10px 8px}
+.top-ad-inner{max-width:1280px;margin:0 auto;text-align:center}
+.top-ad-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a9aa8;margin-bottom:4px;font-weight:700}
+.top-ad-box{min-height:90px;background:#121218;border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+ins.adsbygoogle[data-ad-status="unfilled"]{visibility:hidden!important}
+.wrap{max-width:960px;margin:0 auto;padding:16px 14px 40px}
+.brand{text-align:center;padding:8px 0 12px}
+.brand h1{margin:0;color:#fff;font-size:clamp(22px,4vw,32px);font-weight:900;letter-spacing:-.5px}
+.brand h1 span{color:#e11d48}
+.brand p{margin:4px 0 0;color:#8a8a96;font-size:13px}
+.back-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.back-link{display:inline-flex;align-items:center;gap:6px;color:#c0c0d0;font-weight:700;font-size:14px;padding:8px 12px;border-radius:10px;background:#16161d;border:1px solid rgba(255,255,255,.1)}
+.back-link:hover{border-color:#e11d48;color:#fff}
+.channel-title{font-size:18px;font-weight:800;color:#fff}
+.player-wrap{position:relative;background:#000;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.08);aspect-ratio:16/9;max-height:70vh}
+#mainVideo{width:100%;height:100%;display:block;background:#000;object-fit:contain}
+.overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,.55);z-index:5;cursor:pointer}
+.overlay.hidden{display:none}
+.play-btn{width:72px;height:72px;border-radius:50%;background:#e11d48;color:#fff;border:none;font-size:28px;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(225,29,72,.4)}
+.play-btn:hover{transform:scale(1.05)}
+.hint{margin-top:12px;color:#ccc;font-size:13px;font-weight:600}
+.load-text{color:#fff;font-weight:700;font-size:15px}
+.error-box{text-align:center;padding:20px}
+.error-box p{color:#fca5a5;margin-bottom:12px;font-weight:700}
+.retry-btn{appearance:none;border:none;background:#e11d48;color:#fff;font-weight:800;padding:10px 18px;border-radius:10px;cursor:pointer}
+.meta-bar{display:flex;align-items:center;justify-content:space-between;margin-top:12px;flex-wrap:wrap;gap:8px}
+.live-badge{background:#e11d48;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:6px;text-transform:uppercase}
+.cat{color:#8a8a96;font-size:13px;font-weight:700}
+.footer{margin-top:32px;border-top:1px solid rgba(255,255,255,.06);background:#0a0a0d;text-align:center;padding:18px 14px;font-size:12px;color:#a0a0b0}
+.footer a{color:#c0c0d0;margin:0 6px}
+.tv-ad{margin:20px 0;text-align:center}
+.tv-ad-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a9aa8;margin-bottom:6px;font-weight:700}
+</style>
+</head>
+<body>
+<div class="top-ad-wrap">
+  <div class="top-ad-inner">
+    <div class="top-ad-label">Advertisement</div>
+    <div class="top-ad-box">
+      <ins class="adsbygoogle"
+           data-ad-client="ca-pub-7777536386845474"
+           data-ad-slot="9970802556"
+           data-ad-format="horizontal"
+           data-full-width-responsive="true"
+           style="display:block;min-height:90px;width:100%"></ins>
+    </div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="brand">
+    <h1>SSEGU <span>📺</span> Live TV</h1>
+    <p>Watch free live TV channels</p>
+  </div>
+  <div class="back-row">
+    <a class="back-link" href="https://www.ssegu.com/tv/">← Back to Channels</a>
+    <div class="channel-title" id="currentChannelName">Baba TV</div>
+  </div>
+  <div class="player-wrap">
+    <video id="mainVideo" playsinline controls preload="metadata"></video>
+    <div class="overlay" id="playOverlay">
+      <button class="play-btn" id="mainPlayBtn" type="button" aria-label="Play">▶</button>
+      <div class="hint">Tap to play Baba TV</div>
+    </div>
+    <div class="overlay hidden" id="loadOverlay">
+      <div class="load-text" id="loadText">Connecting…</div>
+    </div>
+    <div class="overlay hidden" id="errorOverlay">
+      <div class="error-box">
+        <p>Unable to load stream. Please try again.</p>
+        <button class="retry-btn" id="retryBtn" type="button">Retry</button>
+      </div>
+    </div>
+  </div>
+  <div class="meta-bar">
+    <span class="live-badge">● LIVE</span>
+    <span class="cat">Entertainment</span>
+  </div>
+  <div class="tv-ad">
+    <div class="tv-ad-label">Advertisement</div>
+    <ins class="adsbygoogle"
+         data-ad-client="ca-pub-7777536386845474"
+         data-ad-slot="9970802556"
+         data-ad-format="auto"
+         data-full-width-responsive="true"
+         style="display:block;min-height:100px"></ins>
+  </div>
+</div>
+<footer class="footer">
+  <a href="https://www.ssegu.com/tv/">Home</a>
+  <a href="https://www.ssegu.com/p/contact-us.html" target="_blank" rel="noopener">Contact</a>
+  <a href="https://www.ssegu.com/p/privacy-policy.html" target="_blank" rel="noopener">Privacy</a>
+  <a href="https://www.ssegu.com/p/terms-and-conditions.html" target="_blank" rel="noopener">Terms</a>
+  <p style="margin-top:10px;color:#aaa">© SSEGU. All rights reserved.</p>
+</footer>
+<script>
+(function(){
+"use strict";
+var STREAM_URL = "https://babatv.co.ug/live/ch04/index.m3u8";
+var CHANNEL_NAME = "Baba TV";
+function pushAds(){
+  document.querySelectorAll("ins.adsbygoogle:not([data-adsbygoogle-status])").forEach(function(ad){
+    try{ (window.adsbygoogle = window.adsbygoogle || []).push({}); }catch(e){}
+  });
+}
+if(document.readyState === "loading"){
+  document.addEventListener("DOMContentLoaded", pushAds);
+} else {
+  pushAds();
+}
+var mainVideo = document.getElementById("mainVideo");
+var playOverlay = document.getElementById("playOverlay");
+var loadOverlay = document.getElementById("loadOverlay");
+var errorOverlay = document.getElementById("errorOverlay");
+var loadText = document.getElementById("loadText");
+var mainPlayBtn = document.getElementById("mainPlayBtn");
+var retryBtn = document.getElementById("retryBtn");
+var currentHls = null;
+var loadTimeout = null;
+var isPlaying = false;
+function showOnly(which){
+  if(playOverlay) playOverlay.classList.toggle("hidden", which !== "play");
+  if(loadOverlay) loadOverlay.classList.toggle("hidden", which !== "load");
+  if(errorOverlay) errorOverlay.classList.toggle("hidden", which !== "error");
+}
+function destroyHls(){
+  if(currentHls){
+    try{ currentHls.destroy(); }catch(e){}
+    currentHls = null;
+  }
+  if(loadTimeout){ clearTimeout(loadTimeout); loadTimeout = null; }
+}
+function showError(){
+  destroyHls();
+  isPlaying = false;
+  showOnly("error");
+}
+function showLoading(msg){
+  if(loadText) loadText.textContent = msg || "Connecting…";
+  showOnly("load");
+}
+function attachStream(url, autoPlay){
+  destroyHls();
+  if(!mainVideo) return;
+  mainVideo.removeAttribute("src");
+  try{ mainVideo.load(); }catch(e){}
+  var resolved = false;
+  function onReady(){
+    if(resolved) return;
+    resolved = true;
+    if(loadTimeout){ clearTimeout(loadTimeout); loadTimeout = null; }
+    if(autoPlay){
+      mainVideo.play().then(function(){
+        isPlaying = true;
+        showOnly("none");
+      }).catch(function(){
+        isPlaying = false;
+        showOnly("play");
+      });
+    }
+  }
+  loadTimeout = setTimeout(function(){
+    if(!resolved) showError();
+  }, 18000);
+  if(window.Hls && Hls.isSupported()){
+    currentHls = new Hls({
+      enableWorker: true,
+      lowLatencyMode: true,
+      backBufferLength: 60,
+      maxBufferLength: 30,
+      manifestLoadingTimeOut: 12000,
+      levelLoadingTimeOut: 12000,
+      fragLoadingTimeOut: 15000
+    });
+    currentHls.loadSource(url);
+    currentHls.attachMedia(mainVideo);
+    currentHls.on(Hls.Events.MANIFEST_PARSED, function(){ onReady(); });
+    currentHls.on(Hls.Events.ERROR, function(ev, data){
+      if(!data.fatal) return;
+      if(data.type === Hls.ErrorTypes.NETWORK_ERROR){
+        try{ currentHls.startLoad(); }catch(e){ showError(); }
+      } else if(data.type === Hls.ErrorTypes.MEDIA_ERROR){
+        try{ currentHls.recoverMediaError(); }catch(e){ showError(); }
+      } else {
+        showError();
+      }
+    });
+  } else if(mainVideo.canPlayType("application/vnd.apple.mpegurl")){
+    mainVideo.src = url;
+    mainVideo.addEventListener("loadedmetadata", onReady, { once: true });
+    mainVideo.addEventListener("error", function(){ showError(); }, { once: true });
+  } else {
+    mainVideo.src = url;
+    mainVideo.addEventListener("loadedmetadata", onReady, { once: true });
+    mainVideo.addEventListener("error", function(){ showError(); }, { once: true });
+  }
+  mainVideo.addEventListener("error", function(){
+    if(!resolved) showError();
+  }, { once: true });
+}
+function startPlay(){
+  showLoading("Connecting to " + CHANNEL_NAME + "…");
+  attachStream(STREAM_URL, true);
+}
+if(mainPlayBtn){
+  mainPlayBtn.addEventListener("click", function(e){
+    e.preventDefault(); e.stopPropagation();
+    startPlay();
+  });
+}
+if(playOverlay){
+  playOverlay.addEventListener("click", function(e){
+    if(e.target === playOverlay || e.target.classList.contains("hint")){
+      e.preventDefault();
+      startPlay();
+    }
+  });
+}
+if(retryBtn){
+  retryBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    startPlay();
+  });
+}
+document.addEventListener("keydown", function(e){
+  if(isPlaying) return;
+  if(e.key === "Enter" || e.key === " " || e.key === "MediaPlayPause"){
+    e.preventDefault();
+    startPlay();
+  }
+});
+if(mainVideo){
+  mainVideo.addEventListener("playing", function(){
+    isPlaying = true;
+    showOnly("none");
+  });
+  mainVideo.addEventListener("waiting", function(){
+    if(isPlaying) showLoading("Buffering…");
+  });
+  mainVideo.addEventListener("canplay", function(){
+    if(isPlaying) showOnly("none");
+  });
+}
+/* Preload metadata only */
+attachStream(STREAM_URL, false);
+showOnly("play");
+})();
+</script>
+</body>
+</html>
