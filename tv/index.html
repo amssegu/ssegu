@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>M2A Live TV — Watch Live Channels</title>
-<meta name="description" content="Watch live TV channels on M2A Live TV.">
+<title>SSEGU Live TV — Watch Live Channels</title>
+<meta name="description" content="Watch live TV channels on SSEGU Live TV.">
 <meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="https://www.ssegu.com/favicon.ico">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com">
@@ -80,7 +80,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{visibility:hidden!important}
 
 <div class="wrap">
   <div class="brand">
-    <h1>M2A <span>📺</span> Live TV</h1>
+    <h1>SSEGU <span>📺</span> Live TV</h1>
     <p>Watch free live TV channels</p>
   </div>
 
@@ -115,10 +115,10 @@ var CHANNELS = [{"id": "citizentv", "name": "Citizen TV", "category": "News", "c
 var state = {filter:"all", query:""};
 
 function pushAds(){
-  document.querySelectorAll("ins.adsbygoogle:not([data-m2a-loaded]):not([data-adsbygoogle-status])").forEach(function(ad){
+  document.querySelectorAll("ins.adsbygoogle:not([data-SSEGU-loaded]):not([data-adsbygoogle-status])").forEach(function(ad){
     if(ad.getBoundingClientRect().width < 10) return;
-    ad.setAttribute("data-m2a-loaded","1");
-    try{ (window.adsbygoogle = window.adsbygoogle || []).push({}); }catch(e){ ad.removeAttribute("data-m2a-loaded"); }
+    ad.setAttribute("data-SSEGU-loaded","1");
+    try{ (window.adsbygoogle = window.adsbygoogle || []).push({}); }catch(e){ ad.removeAttribute("data-SSEGU-loaded"); }
   });
 }
 setTimeout(pushAds, 400);
